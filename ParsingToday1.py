@@ -4,7 +4,7 @@ import json
 
 timestr = datetime.datetime.now().strftime('%Y-%m-%d%%%H:%M:%S.%f')
 
-urlOfNewsLine = 'http://newsline.kg/getNews.php?limit=2&last_dt=' + timestr
+urlOfNewsLine = 'http://newsline.kg/getNews.php?limit=30&last_dt=' + timestr
 
 requestNewsLine = requests.get(urlOfNewsLine)
 
